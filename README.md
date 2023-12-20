@@ -49,3 +49,6 @@ Projeto solicitado pelo professor de Front-End da Universidade Católica de Salv
 <a href="https://github.com/VIMMMMMMM">
 <img src="https://avatars.githubusercontent.com/u/130837775?v=4" width="70px" />
 </a>
+<a href="https://github.com/GustavoCruzzz">
+<img src="https://avatars.githubusercontent.com/u/136636964?v=4" width="70px" />
+</a>
