@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iphone Market</title>
+    <link rel="stylesheet" href="loja.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=MuseoModerno:wght@200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+  <link rel="stylesheet"
+  href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+</head>
+<body>
+    
+
+    <header>
+        <a href="#" class="logo"><i class='bx bxl-apple'></i>BApple</a>
+
+        <ul class="Links">
+
+            <li> <a href="index.html" class="active">Home</a></li>
+            <li><a href="#">Loja</a></li>
+            <li><a href="#">Acessórios</a></li>
+            <li><a href="#">Suporte</a></li>
+                
+        </ul> 
+
+        <div class="comprar-agora">
+            <div class="bx bx-shopping-bag" id="bag-icon">
+                <a href="#"></a>
+            </div>
+            <div class="bx bx-menu" id="menu-icon"></div>
+            <div class="bx bx-moon" id="darkmode"></div>
+            <button  onclick="document.getElementById('id01').style.display='block'" style="width:auto;"><div class="bx bxs-user-circle" id="user">
+                <a href="#"></a>
+            </div>
+        </div>
+    </header>
+
+    <div id="id01" class="modal">
+
+        <form class="modal-content animate" action="/action_page.php" method="post">
+            <div class="imgcontainer">
+                <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+            </div>
+            <div class="titulo">
+                <h1>Inicie sessão para finalizar a compra com rapidez.</h1>
+
+                <div class="bloco">
+                    <p class="titulo1">Iniciar sessão </p>
+                    <input type="text" placeholder="E-mail ou número de telefone" id="login" >
+
+                    <input type="password" placeholder="Insira sua senha" id="senha" >
+                    <input type="submit" value="Entrar" onclick="logar(); return false" >
+                    <div class="linha"></div>
+                </div>
+
+            </div>
+
+        </form>
+    </div>
+
+    <div class="Quadrado">
+        <p class="NOVO">Novo</p>
+        <h1 class="TituloQuadrado">Comprar iPhone 15 Pro</h1>
+        <h2 class="SubtituloQuadrado">Nova câmera. Novo design. Novo iPhone</h2>
+        <img class="Imagemiphone" src="imagens/iphone15pro1101-04b8f56b21783cbbb016946054472817-640-0 1.png" alt="">
+        
+        <p class="TopicoQuadrado">Qual é o melhor modelo pra você?</p>
+       
+        <div class="Quadrado2">
+          <p class="iphone15pro">iPhone 15 Pro</p>
+          <p class="desciphone15pro">Tela de 6,1 polegadas</p>
+          <p class="preciphone15pro">A partir de $999</p>
+        </div>
+        <div class="Quadrado3">
+           <p class="iphone15promax">iPhone 15 Pro Max</p>
+           <p class="desciphone15promax">Tela de 6,7 polegadas</p>
+           <p class="preciphone15promax">A partir de $1.499</p>
+         </div>
+       
+         <p class="corfavorita">Escolha sua cor favorita.</p>
+       
+             <div class="cor1"></div>
+             <div class="cor2"></div>
+             <div class="cor3"></div>
+             <div class="cor4"></div>
+       
+         <p class="espaco">De quanto espaço você precisa?</p>
+       
+         <div class="Quadrado4">
+           <p class="esp1">512 GB</p>
+           <p class="precesp1">A partir de $999</p>
+         </div>
+         <div class="Quadrado5">
+           <p class="esp2">1 TB</p>
+           <p class="precesp2">A partir de $1.499</p>
+         </div>
+       </div>
+
+       <script src="script.js"></script>
+</body>
+</html>
+    
+</body>
+</html>

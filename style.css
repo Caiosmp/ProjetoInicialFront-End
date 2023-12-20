@@ -1,0 +1,4439 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'MuseoModerno', cursive;
+}
+
+:root {
+    --text-color: #000000;
+    --nav-text: #606060;
+    --second-color: #fff;
+    --big-font: 4.5rem;
+    --p-font: 1rem;
+    --textbox-color: #ffffff;
+}
+
+body {
+    background: linear-gradient(0deg, #FFF 70.42%, #DFDFDF 115.64%, #E3E3E3 142.92%, #FFF 173.61%);
+}
+
+header {
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 27px 9%;
+    transition: ease all .55s;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    color: var(--text-color);
+    width: 192px;
+    height: 64px;
+    top: 38px;
+    left: 116px;
+    flex-shrink: 0;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: MuseoModerno;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.logo i {
+    color: var(--text-color);
+    width: 40px;
+    height: 50px;
+    flex-shrink: 0;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    width: 40px;
+    height: 50px;
+    top: 93px;
+    left: 73px;
+}
+
+.Links {
+    display: flex;
+}
+
+.Links a {
+    font-family: MuseoModerno;
+    color: var(--nav-text);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin: 0 10px;
+    width: 52px;
+    height: 58px;
+    top: 57px;
+    left: 515px;
+    transition: all ease .55s;
+}
+
+.Links a:hover {
+    color: var(--text-color)
+}
+
+.comprar-agora {
+    display: flex;
+    align-items: center;
+}
+
+.comprar-agora-responsivo {
+    display: none;
+}
+
+.comprar-agora div {
+    transition: all ease .55s;
+    color: var(--nav-text);
+}
+
+.comprar-agora div:hover {
+    color: var(--text-color);
+}
+
+#bag-icon {
+    font-size: 30px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+#user {
+    font-size: 30px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+#menu-icon {
+    font-size: 40px;
+    cursor: pointer;
+    z-index: 10001;
+    margin: 15px;
+    display: none;
+}
+
+#darkmode {
+    font-size: 30px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+section {
+    padding: 11% 12%;
+}
+
+.hero {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: auto auto;
+    bottom: 1px;
+    right: 55px;
+}
+
+.hero-img {
+    grid-column: 1/ 2;
+    grid-row: 2 / 3;
+    margin-left: 28%;
+    margin-top: -30%;
+}
+
+.hero-img img {
+    width: 950px;
+    height: 898px;
+    margin-left: 210px;
+}
+
+.hero-text h1 {
+    font-size: 96px;
+    font-weight: 700;
+    font-style: normal;
+    line-height: normal;
+    color: var(--text-color);
+    width: 25rem;
+    height: 9.5rem;
+    margin-top: -10vh;
+}
+
+.hero-text h4 {
+    color: var(--text-color);
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    width: 29rem;
+    height: 4rem;
+    top: 360px;
+    left: 54px;
+    width: 471px;
+}
+
+.hero-text p {
+    width: 38rem;
+    height: 4rem;
+    top: 457px;
+    left: 54px;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 200;
+    line-height: normal;
+    color: var(--text-color);
+}
+
+.hero-text {
+
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+.hero-img2 {
+    grid-column: 1 / 2;
+    grid-row: 2 / 4;
+    margin-top: -9.3rem;
+    margin-left: -170px;
+}
+
+body.color {
+    --text-color: #ffffff;
+    background: linear-gradient(0deg, #000 51.7%, #353535 115.64%, #878787 142.92%, #2F2F2F 173.61%);
+    --second-color: #000000;
+    --textbox-color: black;
+}
+
+.iphone15 {
+    background-color: var(--text-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.box {
+    background-color: var(--textbox-color);
+    width: 1400px;
+    height: 900px;
+    padding: 19px;
+    border-radius: 20px;
+    transition: all ease.55s;
+    box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px 10px;
+}
+
+.box:hover {
+    transform: translateY(-5px) scale(1.1);
+}
+
+.box img {
+    height: 41.40rem;
+    flex-shrink: 0;
+    margin-left: 22rem;
+}
+
+.box h1 {
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    width: 339px;
+    height: 76px;
+    margin-left: 31rem;
+    margin-top: 19px;
+    color: var(--text-color)
+}
+
+.box h2 {
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-left: 32rem;
+    color: var(--text-color);
+}
+
+.box h3 {
+    color: #606060;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-left: 37rem;
+}
+
+.informacao {
+    display: flex;
+    align-items: center;
+    gap: 5%;
+    margin-left: 35rem;
+    margin-top: 5%;
+}
+
+.informacao button {
+    color: #126993;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.informacao h5 {
+    color: #126993;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.box p {
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    width: 339px;
+    height: 76px;
+    margin-left: 31rem;
+    margin-top: 19px;
+    color: var(--text-color)
+}
+
+.release-container {
+    margin-left: 4.4rem;
+    margin-bottom: 1%;
+    width: 58px;
+}
+
+.release-container p {
+    font-family: MuseoModerno;
+    font-size: 75px;
+    font-weight: 600;
+    line-height: 119px;
+    color: var(--second-color);
+    letter-spacing: 10px;
+}
+
+.Footer-container {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.Footer-container p {
+    font-family: Inter;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 18px;
+    height: 30px;
+    margin-left: 92px;
+    margin-top: 19px;
+    color: var(--text-color);
+}
+
+.linha {
+    width: 100%;
+    margin-left: 2rem;
+    height: 2px;
+    background-color: var(--text-color);
+}
+
+.Footer-infos {
+    display: flex;
+    justify-content: center;
+    gap: 8rem;
+    margin-top: 1%;
+}
+
+.categoria-footer a {
+    font-family: Inter;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 24px;
+    background-color: transparent;
+    border: none;
+    color: var(--text-color);
+    display: block;
+}
+
+.categoria-footer h1 {
+    font-family: Inter;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 20px;
+    padding-bottom: 10px;
+    color: var(--text-color);
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 3;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.7);
+    padding-top: 60px;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    border: 1px solid #3D3D3D;
+    width: 90%;
+    height: 98%;
+    border-radius: 20px;
+}
+
+.titulo h1 {
+    position: relative;
+    bottom: -20px;
+    top: 70px;
+}
+
+.modal-content .titulo {
+    color: #000;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
+}
+
+.modal-content .titulo h1 {
+    font-family: Inter;
+}
+
+.close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+.animate {
+    -webkit-animation: animatezoom 0.8s;
+    animation: animatezoom 0.8s
+}
+
+.imgcontainer {
+    text-align: center;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.bloco {
+    height: 701px;
+    flex-shrink: 0;
+    background-color: rgb(0, 0, 0);
+    margin-top: 90px;
+    border-radius: 20px;
+}
+
+.bloco .titulo1 {
+    color: white;
+    padding-top: 150px;
+    font-family: MuseoModerno, cursive;
+    font-weight: 200;
+    line-height: 40px;
+    font-size: 32px;
+    text-align: center;
+}
+
+input {
+    display: block;
+    margin: 10px auto;
+    width: 250px;
+    height: 30px;
+}
+
+input[type=text] {
+    background-color: transparent;
+    color: white;
+    width: 500px;
+    height: 80px;
+    border: 1px solid white;
+    box-sizing: border-box;
+    margin-top: 10px;
+    border-radius: 15px;
+    padding-left: 20px;
+}
+
+input[type=password] {
+    background-color: transparent;
+    color: white;
+    width: 500px;
+    height: 80px;
+    border: 1px solid white;
+    box-sizing: border-box;
+    border-radius: 15px;
+    margin-top: 20px;
+    padding-left: 20px;
+}
+
+input[type=submit] {
+    background-color: transparent;
+    color: white;
+    width: 200px;
+    height: 40px;
+    border: 1px solid white;
+    box-sizing: border-box;
+    border-radius: 20px;
+    margin-top: 20px;
+    font-weight: 200;
+    cursor: pointer;
+}
+
+.bloco .linha {
+    display: none;
+    margin-left: 465px;
+    margin-top: 30px;
+    width: 370px;
+    height: 1px;
+    position: static;
+    background-color: white;
+}
+
+.hero-img2 {
+    margin-top: -90px;
+
+}
+
+.Footer-container span {
+    color: #126993;
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal
+}
+
+@media only screen and (max-width: 1328px) {
+    .iphone15 {
+        width: 150%;
+    }
+
+    .Footer-infos {
+        margin-left: 14em;
+    }
+
+    .Footer-container {
+        height: 10em;
+    }
+}
+
+@media only screen and (min-width: 778px) and (max-width: 900px) {
+
+
+    #menu-icon {
+        display: initial;
+
+
+    }
+
+    .Links {
+        position: absolute;
+        top: -70000px;
+        left: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        background: #000000;
+        transition: all ease .55s;
+        text-align: left;
+        margin-top: -45em;
+        margin-left: 5em;
+        z-index: 4;
+        width: 123%;
+        height: 300%;
+
+    }
+
+    .Links a {
+        color: #ffffff;
+        font-size: 60px;
+        font-weight: 400;
+        margin: 0.8rem 1.8rem;
+        display: block;
+    }
+
+    .Links.open {
+        top: 100%;
+    }
+
+    .comprar-agora button {
+        margin-top: 1vh;
+    }
+
+    :root {
+        --cor-fundo: none;
+        --second-color: #000000;
+        flex-direction: row;
+        overflow-x: hidden;
+    }
+
+    .iphone15 {
+        background-color: var(--cor-fundo);
+    }
+
+
+
+
+    .comprar-agora {
+        margin-left: 77.5vh;
+        flex-direction: row-reverse;
+
+
+    }
+
+
+    .hero-text h1 {
+        font-size: 13.5rem;
+        margin-left: 9%;
+        margin-top: 1vh;
+    }
+
+    .hero-text h4 {
+        font-size: 5.6em;
+        white-space: nowrap;
+        margin-left: 10%;
+        margin-top: 11.5vh;
+    }
+
+    .hero-text p {
+        font-size: 1.25em;
+        margin-left: 40%;
+        margin-top: 5vh;
+
+    }
+
+    .hero-img img {
+        width: 281%;
+        height: auto;
+        margin-left: -40vh;
+        margin-top: 23vh;
+        position: relative;
+        z-index: 2;
+    }
+
+    .hero-img2 img {
+        width: 157%;
+        height: auto;
+        margin-left: 125px;
+        margin-top: 132vh;
+        position: relative;
+        transform: rotate(18deg);
+        z-index: 1;
+    }
+
+    section {
+        height: 480vh;
+    }
+
+    #bag-icon {
+        display: none;
+    }
+
+    body.color {
+        --second-color: #fff;
+    }
+
+    .release-container {
+        margin-left: -120vh;
+        margin-top: -130vh;
+        display: flex;
+        flex-direction: row;
+
+    }
+
+    .release-container p {
+        display: flex;
+        white-space: nowrap;
+        text-align: center;
+        margin-left: -100vh;
+
+    }
+
+    .box {
+        width: 100%;
+        background-color: #ffffff;
+        height: 50%;
+        margin-top: 115vh;
+        max-width: 170%;
+    }
+
+    .box h1 {
+        color: #000000;
+        font-size: 6rem;
+        white-space: nowrap;
+        height: 30vh;
+        width: 30vh;
+        margin-left: 21vh;
+    }
+
+    .box h2 {
+        color: #000000;
+        white-space: nowrap;
+        font-size: 2.1rem;
+        height: 8vh;
+        width: 8vh;
+        margin-top: -17vh;
+        margin-left: 22vh;
+    }
+
+    .box h3 {
+        font-size: 1.8rem;
+        white-space: nowrap;
+        height: 3vh;
+        width: 3vh;
+        margin-top: -3vh;
+        margin-left: 42vh;
+    }
+
+    .informacao {
+        margin-left: 45vh;
+    }
+
+    .informacao .button {
+        margin-left: 3vh;
+    }
+
+    .informacao button {
+
+        font-size: 4.5vh;
+        white-space: nowrap;
+
+        width: 24vh;
+        margin-left: -12vh;
+        margin-right: 12vh;
+    }
+
+    .box img {
+        margin-left: auto;
+        width: 68rem;
+        height: 101.5rem;
+    }
+
+    .Footer-container {
+        margin: 0;
+        margin-top: -40vh;
+        height: 240%;
+        width: 60rem;
+    }
+
+    .Footer-container p {
+
+        width: 3000em;
+        height: 240%;
+        font-size: 2.8vh;
+        line-height: 4vh;
+    }
+
+    .Footer-infos {
+        width: 70rem;
+        gap: 2rem;
+        margin: 3vh;
+        margin-left: -3vh;
+    }
+
+    .linha {
+        margin-right: -20rem;
+        margin-left: 4rem;
+        height: 2px;
+        background-color: var(--text-color);
+    }
+}
+
+@media only screen and (min-width: 750px) and (max-width: 777px) {
+    #menu-icon {
+        display: initial;
+
+
+    }
+
+    .Links {
+        position: absolute;
+        top: -70000px;
+        left: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        background: #000000;
+        transition: all ease .55s;
+        text-align: left;
+        margin-top: -45em;
+        margin-left: 5em;
+        z-index: 4;
+        width: 130%;
+        height: 500%;
+    }
+
+    .Links a {
+        color: #ffffff;
+        font-size: 60px;
+        font-weight: 400;
+        margin: 0.8rem 1.8rem;
+        display: block;
+    }
+
+    .Links.open {
+        top: 100%;
+    }
+
+    .comprar-agora button {
+        margin-top: 1vh;
+    }
+
+    :root {
+        --cor-fundo: none;
+        --second-color: #000000;
+        flex-direction: row;
+        overflow-x: hidden;
+    }
+
+    .iphone15 {
+        background-color: var(--cor-fundo);
+    }
+
+    .comprar-agora {
+        margin-left: 77.5vh;
+        flex-direction: row-reverse;
+
+    }
+
+    .bloco {
+        height: 800px;
+    }
+
+    .bloco .titulo1 {
+        font-size: 35px;
+    }
+
+    input[type=text] {
+        height: 82px;
+        font-size: 16px;
+    }
+
+    input[type=password] {
+        height: 82px;
+        font-size: 16px;
+    }
+
+    input[type=submit] {
+        width: 210px;
+        height: 45px;
+        font-size: 16px;
+    }
+
+    .hero-text h1 {
+        font-size: 13.5rem;
+        margin-left: 9%;
+        margin-top: 1vh;
+    }
+
+    .hero-text h4 {
+        font-size: 5.6em;
+        white-space: nowrap;
+        margin-left: 10%;
+        margin-top: 11.5vh;
+    }
+
+    .hero-text p {
+        font-size: 1.25em;
+
+        margin-left: 40%;
+        margin-top: 5vh;
+
+    }
+
+    .hero-img img {
+        width: 281%;
+        height: auto;
+        margin-left: -40vh;
+        margin-top: 23vh;
+        position: relative;
+        z-index: 2;
+    }
+
+    .hero-img2 img {
+        width: 157%;
+        height: auto;
+        margin-left: 125px;
+        margin-top: 132vh;
+        position: relative;
+        transform: rotate(18deg);
+        z-index: 1;
+    }
+
+    section {
+        height: 480vh;
+    }
+
+    #bag-icon {
+        display: none;
+
+    }
+
+    body.color {
+        --second-color: #fff;
+    }
+
+    .release-container {
+        margin-left: -120vh;
+        margin-top: -130vh;
+        display: flex;
+        flex-direction: row;
+
+    }
+
+    .release-container p {
+        display: flex;
+        white-space: nowrap;
+        text-align: center;
+        margin-left: -85vh;
+
+    }
+
+    .box {
+        width: 105%;
+        background-color: #ffffff;
+        height: 50%;
+        margin-top: 115vh;
+        max-width: 170%;
+    }
+
+    .box h1 {
+        color: #000000;
+        font-size: 6rem;
+        white-space: nowrap;
+        height: 30vh;
+        width: 30vh;
+        margin-left: 21vh;
+    }
+
+    .box h2 {
+        color: #000000;
+        white-space: nowrap;
+        font-size: 2.1rem;
+        height: 8vh;
+        width: 8vh;
+        margin-top: -17vh;
+        margin-left: 22vh;
+    }
+
+    .box h3 {
+        font-size: 1.8rem;
+        white-space: nowrap;
+        height: 3vh;
+        width: 3vh;
+        margin-top: -3vh;
+        margin-left: 42vh;
+    }
+
+    .informacao {
+        margin-left: 45vh;
+    }
+
+    .informacao .button {
+        margin-left: 3vh;
+    }
+
+    .informacao button {
+
+        font-size: 4.5vh;
+        white-space: nowrap;
+
+        width: 24vh;
+        margin-left: -12vh;
+        margin-right: 12vh;
+    }
+
+    .box img {
+        margin-left: auto;
+        width: 68rem;
+        height: 101.5rem;
+    }
+
+    .Footer-container {
+        margin: 0;
+        margin-top: -40vh;
+        height: 240%;
+        width: 60rem;
+    }
+
+    .Footer-container p {
+
+        width: 3000em;
+        height: 240%;
+        font-size: 2.8vh;
+        line-height: 4vh;
+    }
+
+    .Footer-infos {
+        width: 70rem;
+        gap: 2rem;
+        margin: 3vh;
+        margin-left: -3vh;
+    }
+
+    .linha {
+        margin-right: -20rem;
+        margin-left: 4rem;
+        height: 2px;
+        background-color: var(--text-color);
+    }
+}
+
+@media only screen and (min-width: 720px) and (max-width: 749px) {
+    #menu-icon {
+        display: initial;
+
+
+    }
+
+    .Links {
+        position: absolute;
+        top: -70000px;
+        left: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        background: #000000;
+        transition: all ease .55s;
+        text-align: left;
+        margin-top: -45em;
+        margin-left: 5em;
+        z-index: 4;
+        width: 140%;
+        height: 500%;
+    }
+
+    .Links a {
+        color: #ffffff;
+        font-size: 60px;
+        font-weight: 400;
+        margin: 0.8rem 1.8rem;
+        display: block;
+    }
+
+    .Links.open {
+        top: 100%;
+    }
+
+    .comprar-agora button {
+        margin-top: 1vh;
+
+    }
+
+    :root {
+        --cor-fundo: none;
+        --second-color: #000000;
+        flex-direction: row;
+        overflow-x: hidden;
+    }
+
+    .iphone15 {
+        background-color: var(--cor-fundo);
+    }
+
+    .comprar-agora {
+        margin-left: 77.5vh;
+
+        flex-direction: row-reverse;
+
+
+    }
+
+    .bloco {
+        height: 805px;
+    }
+
+    .bloco .titulo1 {
+        font-size: 38px;
+    }
+
+    input[type=text] {
+        height: 82px;
+        font-size: 18px;
+    }
+
+    input[type=password] {
+        height: 82px;
+        font-size: 18px;
+    }
+
+    input[type=submit] {
+        width: 210px;
+        height: 45px;
+        font-size: 18px;
+    }
+
+    .hero-text h1 {
+        font-size: 13.5rem;
+
+        margin-left: 9%;
+        margin-top: 1vh;
+    }
+
+    .hero-text h4 {
+        font-size: 5.6em;
+
+        white-space: nowrap;
+        margin-left: 10%;
+        margin-top: 11.5vh;
+    }
+
+    .hero-text p {
+        font-size: 1.25em;
+        margin-left: 40%;
+        margin-top: 5vh;
+
+    }
+
+    .hero-img img {
+        width: 281%;
+        height: auto;
+        margin-left: -40vh;
+        margin-top: 23vh;
+        position: relative;
+        z-index: 2;
+    }
+
+    .hero-img2 img {
+        width: 157%;
+        height: auto;
+        margin-left: 125px;
+        margin-top: 132vh;
+        position: relative;
+        transform: rotate(18deg);
+        z-index: 1;
+    }
+
+    section {
+        height: 480vh;
+    }
+
+    #bag-icon {
+        display: none;
+
+    }
+
+    body.color {
+        --second-color: #fff;
+    }
+
+    .release-container {
+        margin-left: -120vh;
+        margin-top: -130vh;
+        display: flex;
+        flex-direction: row;
+
+    }
+
+    .release-container p {
+        display: flex;
+        white-space: nowrap;
+        text-align: center;
+        margin-left: -80vh;
+
+    }
+
+    .box {
+        width: 110%;
+        background-color: #ffffff;
+        height: 50%;
+        margin-top: 115vh;
+        max-width: 170%;
+    }
+
+    .box h1 {
+        color: #000000;
+        font-size: 6rem;
+        white-space: nowrap;
+        height: 30vh;
+        width: 30vh;
+        margin-left: 21vh;
+    }
+
+    .box h2 {
+        color: #000000;
+        white-space: nowrap;
+        font-size: 2.1rem;
+        height: 8vh;
+        width: 8vh;
+        margin-top: -17vh;
+        margin-left: 22vh;
+    }
+
+    .box h3 {
+        font-size: 1.8rem;
+        white-space: nowrap;
+        height: 3vh;
+        width: 3vh;
+        margin-top: -3vh;
+        margin-left: 42vh;
+    }
+
+    .informacao {
+        margin-left: 45vh;
+    }
+
+    .informacao .button {
+        margin-left: 3vh;
+    }
+
+    .informacao button {
+
+        font-size: 4.5vh;
+        white-space: nowrap;
+
+        width: 24vh;
+        margin-left: -12vh;
+        margin-right: 12vh;
+    }
+
+    .box img {
+        margin-left: auto;
+        width: 68rem;
+        height: 101.5rem;
+    }
+
+    .Footer-container {
+        margin: 0;
+        margin-top: -40vh;
+        height: 240%;
+        width: 60rem;
+    }
+
+    .Footer-container p {
+
+        width: 3000em;
+        height: 240%;
+        font-size: 2.8vh;
+        line-height: 4vh;
+    }
+
+    .Footer-infos {
+        width: 70rem;
+        gap: 2rem;
+        margin: 3vh;
+        margin-left: -3vh;
+    }
+
+    .linha {
+        margin-right: -20rem;
+        margin-left: 4rem;
+        height: 2px;
+        background-color: var(--text-color);
+    }
+}
+
+@media only screen and (min-width: 700px) and (max-width: 719px) {
+    #menu-icon {
+        display: initial;
+
+
+    }
+
+    .Links {
+        position: absolute;
+        top: -70000px;
+        left: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        background: #000000;
+        transition: all ease .55s;
+        text-align: left;
+        margin-top: -45em;
+        margin-left: 5em;
+        z-index: 4;
+        width: 145%;
+        height: 600%;
+
+    }
+
+    .Links a {
+        color: #ffffff;
+        font-size: 65px;
+        font-weight: 400;
+        margin: 0.8rem 1.8rem;
+        display: block;
+    }
+
+    .Links.open {
+        top: 100%;
+    }
+
+    .comprar-agora button {
+        margin-top: 1vh;
+
+    }
+
+    :root {
+        --cor-fundo: none;
+        --second-color: #000000;
+        flex-direction: row;
+        overflow-x: hidden;
+    }
+
+    .iphone15 {
+        background-color: var(--cor-fundo);
+    }
+
+    .comprar-agora {
+        margin-left: 77.5vh;
+        flex-direction: row-reverse;
+
+
+    }
+
+
+    .bloco {
+        height: 808px;
+    }
+
+    .bloco .titulo1 {
+        font-size: 41px;
+    }
+
+    input[type=text] {
+        height: 84px;
+        font-size: 20px;
+    }
+
+    input[type=password] {
+        height: 84px;
+        font-size: 20px;
+    }
+
+    input[type=submit] {
+        width: 212px;
+        height: 47px;
+        font-size: 20px;
+    }
+
+    .hero-text h1 {
+        font-size: 13.5rem;
+        margin-left: 9%;
+        margin-top: 1vh;
+    }
+
+    .hero-text h4 {
+        font-size: 5.6em;
+        white-space: nowrap;
+        margin-left: 10%;
+        margin-top: 11.5vh;
+    }
+
+    .hero-text p {
+        font-size: 1.25em;
+        margin-left: 40%;
+        margin-top: 5vh;
+
+    }
+
+    .hero-img img {
+        width: 281%;
+        height: auto;
+        margin-left: -40vh;
+        margin-top: 23vh;
+        position: relative;
+        z-index: 2;
+    }
+
+    .hero-img2 img {
+        width: 157%;
+        height: auto;
+        margin-left: 125px;
+        margin-top: 132vh;
+        position: relative;
+        transform: rotate(18deg);
+        z-index: 1;
+    }
+
+    section {
+        height: 480vh;
+    }
+
+    #bag-icon {
+        display: none;
+    }
+
+    body.color {
+        --second-color: #fff;
+    }
+
+    .release-container {
+        margin-left: -120vh;
+        margin-top: -130vh;
+        display: flex;
+        flex-direction: row;
+
+    }
+
+    .release-container p {
+        display: flex;
+        white-space: nowrap;
+        text-align: center;
+        margin-left: -75vh;
+
+    }
+
+    .box {
+        width: 115%;
+        background-color: #ffffff;
+        height: 50%;
+        margin-top: 115vh;
+        max-width: 190%;
+    }
+
+    .box h1 {
+        color: #000000;
+        font-size: 6rem;
+        white-space: nowrap;
+        height: 30vh;
+        width: 30vh;
+        margin-left: 21vh;
+    }
+
+    .box h2 {
+        color: #000000;
+        white-space: nowrap;
+        font-size: 2.1rem;
+        height: 8vh;
+        width: 8vh;
+        margin-top: -17vh;
+        margin-left: 22vh;
+    }
+
+    .box h3 {
+        font-size: 1.8rem;
+        white-space: nowrap;
+        height: 3vh;
+        width: 3vh;
+        margin-top: -3vh;
+        margin-left: 42vh;
+    }
+
+    .informacao {
+        margin-left: 45vh;
+    }
+
+    .informacao .button {
+        margin-left: 3vh;
+    }
+
+    .informacao button {
+
+        font-size: 4.5vh;
+        white-space: nowrap;
+
+        width: 24vh;
+        margin-left: -12vh;
+        margin-right: 12vh;
+    }
+
+    .box img {
+        margin-left: auto;
+        width: 68rem;
+        height: 101.5rem;
+    }
+
+    .Footer-container {
+        margin: 0;
+        margin-top: -40vh;
+        height: 240%;
+        width: 60rem;
+    }
+
+    .Footer-container p {
+
+        width: 3000em;
+        height: 240%;
+        font-size: 2.8vh;
+        line-height: 4vh;
+    }
+
+    .Footer-infos {
+        width: 70rem;
+        gap: 2rem;
+        margin: 3vh;
+        margin-left: -3vh;
+    }
+
+    .linha {
+        margin-right: -20rem;
+        margin-left: 4rem;
+        height: 2px;
+        background-color: var(--text-color);
+    }
+}
+
+@media only screen and (min-width: 675px) and (max-width: 699px) {
+    #menu-icon {
+        display: initial;
+
+
+    }
+
+    .Links {
+        position: absolute;
+        top: -70000px;
+        left: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        background: #000000;
+        transition: all ease .55s;
+        text-align: left;
+        margin-top: -45em;
+        margin-left: 5em;
+        z-index: 4;
+        width: 155%;
+        height: 600%;
+    }
+
+    .Links a {
+        color: #ffffff;
+        font-size: 65px;
+        font-weight: 400;
+        margin: 0.8rem 1.8rem;
+        display: block;
+    }
+
+    .Links.open {
+        top: 100%;
+    }
+
+    .comprar-agora button {
+        margin-top: 1vh;
+    }
+
+    :root {
+        --cor-fundo: none;
+        --second-color: #000000;
+        flex-direction: row;
+        overflow-x: hidden;
+    }
+
+    .iphone15 {
+        background-color: var(--cor-fundo);
+    }
+
+    .comprar-agora {
+        margin-left: 77.5vh;
+        flex-direction: row-reverse;
+
+
+    }
+
+    .modal-content .titulo {
+        font-size: 17px;
+    }
+
+    .bloco {
+        height: 810px;
+    }
+
+    .bloco .titulo1 {
+        font-size: 44px;
+    }
+
+    input[type=text] {
+        height: 86px;
+        font-size: 22px;
+    }
+
+    input[type=password] {
+        height: 86px;
+        font-size: 22px;
+    }
+
+    input[type=submit] {
+        width: 214px;
+        height: 49px;
+        font-size: 22px;
+    }
+
+    .hero-text h1 {
+        font-size: 13.5rem;
+        margin-left: 9%;
+        margin-top: 1vh;
+    }
+
+    .hero-text h4 {
+        font-size: 5.6em;
+        white-space: nowrap;
+        margin-left: 10%;
+        margin-top: 11.5vh;
+    }
+
+    .hero-text p {
+        font-size: 1.25em;
+        margin-left: 40%;
+        margin-top: 5vh;
+
+    }
+
+    .hero-img img {
+        width: 281%;
+        height: auto;
+        margin-left: -40vh;
+        margin-top: 23vh;
+        position: relative;
+        z-index: 2;
+    }
+
+    .hero-img2 img {
+        width: 157%;
+        height: auto;
+        margin-left: 125px;
+        margin-top: 132vh;
+        position: relative;
+        transform: rotate(18deg);
+        z-index: 1;
+    }
+
+    section {
+        height: 480vh;
+    }
+
+    #bag-icon {
+        display: none;
+    }
+
+    body.color {
+        --second-color: #fff;
+    }
+
+    .release-container {
+        margin-left: -120vh;
+        margin-top: -130vh;
+        display: flex;
+        flex-direction: row;
+
+    }
+
+    .release-container p {
+        display: flex;
+        white-space: nowrap;
+        text-align: center;
+        margin-left: -70vh;
+
+    }
+
+    .box {
+        width: 120%;
+        background-color: #ffffff;
+        height: 50%;
+        margin-top: 115vh;
+        max-width: 190%;
+    }
+
+    .box h1 {
+        color: #000000;
+        font-size: 6rem;
+        white-space: nowrap;
+        height: 30vh;
+        width: 30vh;
+        margin-left: 21vh;
+    }
+
+    .box h2 {
+        color: #000000;
+        white-space: nowrap;
+        font-size: 2.1rem;
+        height: 8vh;
+        width: 8vh;
+        margin-top: -17vh;
+        margin-left: 22vh;
+    }
+
+    .box h3 {
+        font-size: 1.8rem;
+        white-space: nowrap;
+        height: 3vh;
+        width: 3vh;
+        margin-top: -3vh;
+        margin-left: 42vh;
+    }
+
+    .informacao {
+        margin-left: 45vh;
+    }
+
+    .informacao .button {
+        margin-left: 3vh;
+    }
+
+    .informacao button {
+
+        font-size: 4.5vh;
+        white-space: nowrap;
+
+        width: 24vh;
+        margin-left: -12vh;
+        margin-right: 12vh;
+    }
+
+    .box img {
+        margin-left: auto;
+        width: 68rem;
+        height: 101.5rem;
+    }
+
+    .Footer-container {
+        margin: 0;
+        margin-top: -40vh;
+        height: 240%;
+        width: 60rem;
+    }
+
+    .Footer-container p {
+
+        width: 3000em;
+        height: 240%;
+        font-size: 2.8vh;
+        line-height: 4vh;
+    }
+
+    .Footer-infos {
+        width: 70rem;
+        gap: 2rem;
+        margin: 3vh;
+        margin-left: -3vh;
+    }
+
+    .linha {
+        margin-right: -20rem;
+        margin-left: 4rem;
+        height: 2px;
+        background-color: var(--text-color);
+    }
+}
+
+@media only screen and (min-width: 622px) and (max-width: 674px) {
+
+    #menu-icon {
+        display: initial;
+
+
+    }
+
+    .Links {
+        position: absolute;
+        top: -70000px;
+        left: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        background: #000000;
+        transition: all ease .55s;
+        text-align: left;
+        margin-top: -45em;
+        margin-left: 5em;
+        z-index: 4;
+        width: 160%;
+        height: 600%;
+    }
+
+    .Links a {
+        color: #ffffff;
+        font-size: 70px;
+        font-weight: 400;
+        margin: 0.8rem 1.8rem;
+        display: block;
+    }
+
+    .Links.open {
+        top: 100%;
+    }
+
+    .comprar-agora button {
+        margin-top: 1vh;
+    }
+
+    :root {
+        --cor-fundo: none;
+        --second-color: #000000;
+        flex-direction: row;
+        overflow-x: hidden;
+    }
+
+    .iphone15 {
+        background-color: var(--cor-fundo);
+    }
+
+    .comprar-agora {
+        margin-left: 77.5vh;
+        flex-direction: row-reverse;
+
+
+    }
+
+    .modal-content .titulo {
+        font-size: 19px;
+    }
+
+    .bloco {
+        height: 810px;
+    }
+
+    .bloco .titulo1 {
+        font-size: 47px;
+    }
+
+    input[type=text] {
+        height: 88px;
+        font-size: 24px;
+    }
+
+    input[type=password] {
+        height: 88px;
+        font-size: 24px;
+    }
+
+    input[type=submit] {
+        width: 216px;
+        height: 51px;
+        font-size: 24px;
+    }
+
+    .hero-text h1 {
+        font-size: 13.5rem;
+        margin-left: 9%;
+        margin-top: 1vh;
+    }
+
+    .hero-text h4 {
+        font-size: 5.6em;
+        white-space: nowrap;
+        margin-left: 10%;
+        margin-top: 11.5vh;
+    }
+
+    .hero-text p {
+        font-size: 1.25em;
+        margin-left: 40%;
+        margin-top: 5vh;
+
+    }
+
+    .hero-img img {
+        width: 281%;
+        height: auto;
+        margin-left: -40vh;
+        margin-top: 23vh;
+        position: relative;
+        z-index: 2;
+    }
+
+    .hero-img2 img {
+        width: 157%;
+        height: auto;
+        margin-left: 125px;
+        margin-top: 132vh;
+        position: relative;
+        transform: rotate(18deg);
+        z-index: 1;
+    }
+
+    section {
+        height: 480vh;
+    }
+
+    #bag-icon {
+        display: none;
+    }
+
+    body.color {
+        --second-color: #fff;
+    }
+
+    .release-container {
+        margin-left: -120vh;
+        margin-top: -130vh;
+        display: flex;
+        flex-direction: row;
+
+    }
+
+    .release-container p {
+        display: flex;
+        white-space: nowrap;
+        text-align: center;
+        margin-left: -60vh;
+
+    }
+
+    .box {
+        width: 125%;
+        background-color: #ffffff;
+        height: 50%;
+        margin-top: 115vh;
+        max-width: 210%;
+    }
+
+    .box h1 {
+        color: #000000;
+        font-size: 6rem;
+        white-space: nowrap;
+        height: 30vh;
+        width: 30vh;
+        margin-left: 21vh;
+    }
+
+    .box h2 {
+        color: #000000;
+        white-space: nowrap;
+        font-size: 2.1rem;
+        height: 8vh;
+        width: 8vh;
+        margin-top: -17vh;
+        margin-left: 22vh;
+    }
+
+    .box h3 {
+        font-size: 1.8rem;
+        white-space: nowrap;
+        height: 3vh;
+        width: 3vh;
+        margin-top: -3vh;
+        margin-left: 42vh;
+    }
+
+    .informacao {
+        margin-left: 45vh;
+    }
+
+    .informacao .button {
+        margin-left: 3vh;
+    }
+
+    .informacao button {
+
+        font-size: 4.5vh;
+        white-space: nowrap;
+
+        width: 24vh;
+        margin-left: -12vh;
+        margin-right: 12vh;
+    }
+
+    .box img {
+        margin-left: auto;
+        width: 68rem;
+        height: 104.5rem;
+    }
+
+    .Footer-container {
+        margin: 0;
+        margin-top: -40vh;
+        height: 240%;
+        width: 60rem;
+    }
+
+    .Footer-container p {
+
+        width: 3000em;
+        height: 240%;
+        font-size: 2.8vh;
+        line-height: 4vh;
+    }
+
+    .Footer-infos {
+        width: 70rem;
+        gap: 2rem;
+        margin: 3vh;
+        margin-left: -3vh;
+    }
+
+    .linha {
+        margin-right: -20rem;
+        margin-left: 4rem;
+        height: 2px;
+        background-color: var(--text-color);
+    }
+}
+
+@media only screen and (min-width: 571px) and (max-width: 621px) {
+
+    #menu-icon {
+        display: initial;
+
+
+    }
+
+    .Links {
+        position: absolute;
+        top: -70000px;
+        left: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        background: #000000;
+        transition: all ease .55s;
+        text-align: left;
+        margin-top: -45em;
+        margin-left: 5em;
+        z-index: 4;
+        width: 170%;
+        height: 600%;
+    }
+
+    .Links a {
+        color: #ffffff;
+        font-size: 70px;
+        font-weight: 400;
+        margin: 0.8rem 1.8rem;
+        display: block;
+    }
+
+    .Links.open {
+        top: 100%;
+    }
+
+    .comprar-agora button {
+        margin-top: 1vh;
+    }
+
+    :root {
+        --cor-fundo: none;
+        --second-color: #000000;
+        flex-direction: row;
+        overflow-x: hidden;
+    }
+
+    .iphone15 {
+        background-color: var(--cor-fundo);
+    }
+
+    .comprar-agora {
+        margin-left: 77.5vh;
+        flex-direction: row-reverse;
+
+
+    }
+
+    .modal-content .titulo {
+        font-size: 21px;
+    }
+
+    .bloco {
+        height: 813px;
+    }
+
+    .bloco .titulo1 {
+        font-size: 50px;
+    }
+
+    input[type=text] {
+        height: 90px;
+        font-size: 26px;
+    }
+
+    input[type=password] {
+        height: 90px;
+        font-size: 26px;
+    }
+
+    input[type=submit] {
+        width: 218px;
+        height: 53px;
+        font-size: 26px;
+    }
+
+
+    .hero-text h1 {
+        font-size: 13.5rem;
+        margin-left: 9%;
+        margin-top: 1vh;
+    }
+
+    .hero-text h4 {
+        font-size: 5.6em;
+        white-space: nowrap;
+        margin-left: 10%;
+        margin-top: 11.5vh;
+    }
+
+    .hero-text p {
+        font-size: 1.25em;
+        margin-left: 40%;
+        margin-top: 5vh;
+
+    }
+
+    .hero-img img {
+        width: 281%;
+        height: auto;
+        margin-left: -40vh;
+        margin-top: 23vh;
+        position: relative;
+        z-index: 2;
+    }
+
+    .hero-img2 img {
+        width: 157%;
+        height: auto;
+        margin-left: 125px;
+        margin-top: 132vh;
+        position: relative;
+        transform: rotate(18deg);
+        z-index: 1;
+    }
+
+    section {
+        height: 480vh;
+    }
+
+    #bag-icon {
+        display: none;
+    }
+
+    body.color {
+        --second-color: #fff;
+    }
+
+    .release-container {
+        margin-left: -120vh;
+        margin-top: -130vh;
+        display: flex;
+        flex-direction: row;
+
+    }
+
+    .release-container p {
+        display: flex;
+        white-space: nowrap;
+        text-align: center;
+        margin-left: -50vh;
+
+    }
+
+    .box {
+        width: 130%;
+        background-color: #ffffff;
+        height: 50%;
+        margin-top: 115vh;
+        max-width: 230%;
+    }
+
+    .box h1 {
+        color: #000000;
+        font-size: 6rem;
+        white-space: nowrap;
+        height: 30vh;
+        width: 30vh;
+        margin-left: 21vh;
+    }
+
+    .box h2 {
+        color: #000000;
+        white-space: nowrap;
+        font-size: 2.1rem;
+        height: 8vh;
+        width: 8vh;
+        margin-top: -17vh;
+        margin-left: 22vh;
+    }
+
+    .box h3 {
+        font-size: 1.8rem;
+        white-space: nowrap;
+        height: 3vh;
+        width: 3vh;
+        margin-top: -3vh;
+        margin-left: 42vh;
+    }
+
+    .informacao {
+        margin-left: 45vh;
+    }
+
+    .informacao .button {
+        margin-left: 3vh;
+    }
+
+    .informacao button {
+
+        font-size: 4.5vh;
+        white-space: nowrap;
+
+        width: 24vh;
+        margin-left: -12vh;
+        margin-right: 12vh;
+    }
+
+    .box img {
+        margin-left: auto;
+        width: 68rem;
+        height: 104.5rem;
+    }
+
+    .Footer-container {
+        margin: 0;
+        margin-top: -40vh;
+        height: 240%;
+        width: 60rem;
+    }
+
+    .Footer-container p {
+
+        width: 3000em;
+        height: 240%;
+        font-size: 2.8vh;
+        line-height: 4vh;
+    }
+
+    .Footer-infos {
+        width: 70rem;
+        gap: 2rem;
+        margin: 3vh;
+        margin-left: -3vh;
+    }
+
+    .linha {
+        margin-right: -20rem;
+        margin-left: 4rem;
+        height: 2px;
+        background-color: var(--text-color);
+    }
+}
+
+@media only screen and (min-width: 550px) and (max-width: 570px) {
+
+    #menu-icon {
+        display: initial;
+
+
+    }
+
+    .Links {
+        position: absolute;
+        top: -70000px;
+        left: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        background: #000000;
+        transition: all ease .55s;
+        text-align: left;
+        margin-top: -45em;
+        margin-left: 5em;
+        z-index: 4;
+        width: 180%;
+        height: 600%;
+
+    }
+
+    .Links a {
+        color: #ffffff;
+        font-size: 70px;
+        font-weight: 400;
+        margin: 0.8rem 1.8rem;
+        display: block;
+    }
+
+    .Links.open {
+        top: 100%;
+    }
+
+    .comprar-agora button {
+        margin-top: 1vh;
+    }
+
+    :root {
+        --cor-fundo: none;
+        --second-color: #000000;
+        flex-direction: row;
+        overflow-x: hidden;
+    }
+
+    .iphone15 {
+        background-color: var(--cor-fundo);
+    }
+
+    .comprar-agora {
+        margin-left: 77.5vh;
+        flex-direction: row-reverse;
+
+
+    }
+
+    .modal-content .titulo {
+        font-size: 23px;
+    }
+
+    .bloco {
+        height: 815px;
+    }
+
+    .bloco .titulo1 {
+        font-size: 53px;
+    }
+
+    input[type=text] {
+        height: 92px;
+        font-size: 28px;
+    }
+
+    input[type=password] {
+        height: 92px;
+        font-size: 28px;
+    }
+
+    input[type=submit] {
+        width: 220px;
+        height: 55px;
+        font-size: 28px;
+    }
+
+    .hero-text h1 {
+        font-size: 13.5rem;
+        margin-left: 9%;
+        margin-top: 1vh;
+    }
+
+    .hero-text h4 {
+        font-size: 5.6em;
+        white-space: nowrap;
+        margin-left: 10%;
+        margin-top: 11.5vh;
+    }
+
+    .hero-text p {
+        font-size: 1.25em;
+        margin-left: 40%;
+        margin-top: 5vh;
+
+    }
+
+    .hero-img img {
+        width: 281%;
+        height: auto;
+        margin-left: -40vh;
+        margin-top: 23vh;
+        position: relative;
+        z-index: 2;
+    }
+
+    .hero-img2 img {
+        width: 157%;
+        height: auto;
+        margin-left: 125px;
+        margin-top: 132vh;
+        position: relative;
+        transform: rotate(18deg);
+        z-index: 1;
+    }
+
+    section {
+        height: 480vh;
+    }
+
+    #bag-icon {
+        display: none;
+    }
+
+    body.color {
+        --second-color: #fff;
+    }
+
+    .release-container {
+        margin-left: -120vh;
+        margin-top: -130vh;
+        display: flex;
+        flex-direction: row;
+
+    }
+
+    .release-container p {
+        display: flex;
+        white-space: nowrap;
+        text-align: center;
+        margin-left: -55vh;
+
+    }
+
+    .box {
+        width: 140%;
+        background-color: #ffffff;
+        height: 50%;
+        margin-top: 115vh;
+        max-width: 230%;
+    }
+
+    .box h1 {
+        color: #000000;
+        font-size: 6rem;
+        white-space: nowrap;
+        height: 30vh;
+        width: 30vh;
+        margin-left: 21vh;
+    }
+
+    .box h2 {
+        color: #000000;
+        white-space: nowrap;
+        font-size: 2.1rem;
+        height: 8vh;
+        width: 8vh;
+        margin-top: -17vh;
+        margin-left: 22vh;
+    }
+
+    .box h3 {
+        font-size: 1.8rem;
+        white-space: nowrap;
+        height: 3vh;
+        width: 3vh;
+        margin-top: -3vh;
+        margin-left: 42vh;
+    }
+
+    .informacao {
+        margin-left: 45vh;
+    }
+
+    .informacao .button {
+        margin-left: 3vh;
+    }
+
+    .informacao button {
+
+        font-size: 4.5vh;
+        white-space: nowrap;
+
+        width: 24vh;
+        margin-left: -12vh;
+        margin-right: 12vh;
+    }
+
+    .box img {
+        margin-left: auto;
+        width: 68rem;
+        height: 104.5rem;
+    }
+
+    .Footer-container {
+        margin: 0;
+        margin-top: -40vh;
+        height: 240%;
+        width: 60rem;
+    }
+
+    .Footer-container p {
+
+        width: 3000em;
+        height: 240%;
+        font-size: 2.8vh;
+        line-height: 4vh;
+    }
+
+    .Footer-infos {
+        width: 70rem;
+        gap: 2rem;
+        margin: 3vh;
+        margin-left: -3vh;
+    }
+
+    .linha {
+        margin-right: -20rem;
+        margin-left: 4rem;
+        height: 2px;
+        background-color: var(--text-color);
+    }
+}
+
+@media only screen and (min-width: 500px) and (max-width: 549px) {
+    #menu-icon {
+        display: initial;
+
+
+    }
+
+    .Links {
+        position: absolute;
+        top: -70000px;
+        left: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        background: #000000;
+        transition: all ease .55s;
+        text-align: left;
+        margin-top: -45em;
+        margin-left: 3em;
+        z-index: 4;
+        width: 195%;
+        height: 600%;
+    }
+
+    .Links a {
+        color: #ffffff;
+        font-size: 75px;
+        font-weight: 400;
+        margin: 0.8rem 1.8rem;
+        display: block;
+    }
+
+    .Links.open {
+        top: 100%;
+    }
+
+    .comprar-agora button {
+        margin-top: 1vh;
+    }
+
+    :root {
+        --cor-fundo: none;
+        --second-color: #000000;
+        flex-direction: row;
+        overflow-x: hidden;
+    }
+
+    .iphone15 {
+        background-color: var(--cor-fundo);
+    }
+
+    .comprar-agora {
+        margin-left: 77.5vh;
+        flex-direction: row-reverse;
+
+
+    }
+
+    .modal-content .titulo {
+        font-size: 25px;
+    }
+
+    .bloco {
+        height: 817px;
+    }
+
+    .bloco .titulo1 {
+        font-size: 56px;
+    }
+
+    input[type=text] {
+        height: 94px;
+        font-size: 30px;
+    }
+
+    input[type=password] {
+        height: 94px;
+        font-size: 30px;
+    }
+
+    input[type=submit] {
+        width: 222px;
+        height: 57px;
+        font-size: 30px;
+    }
+
+
+
+    .hero-text h1 {
+        font-size: 13.5rem;
+        margin-left: 9%;
+        margin-top: 1vh;
+    }
+
+    .hero-text h4 {
+        font-size: 5.6em;
+        white-space: nowrap;
+        margin-left: 10%;
+        margin-top: 11.5vh;
+    }
+
+    .hero-text p {
+        font-size: 1.25em;
+        margin-left: 40%;
+        margin-top: 5vh;
+
+    }
+
+    .hero-img img {
+        width: 281%;
+        height: auto;
+        margin-left: -40vh;
+        margin-top: 23vh;
+        position: relative;
+        z-index: 2;
+    }
+
+    .hero-img2 img {
+        width: 157%;
+        height: auto;
+        margin-left: 125px;
+        margin-top: 132vh;
+        position: relative;
+        transform: rotate(18deg);
+        z-index: 1;
+    }
+
+    section {
+        height: 480vh;
+    }
+
+    #bag-icon {
+        display: none;
+    }
+
+    body.color {
+        --second-color: #fff;
+    }
+
+    .release-container {
+        margin-left: -120vh;
+        margin-top: -130vh;
+        display: flex;
+        flex-direction: row;
+
+    }
+
+    .release-container p {
+        display: flex;
+        white-space: nowrap;
+        text-align: center;
+        margin-left: -45vh;
+
+    }
+
+    .box {
+        width: 160%;
+        background-color: #ffffff;
+        height: 50%;
+        margin-top: 115vh;
+        max-width: 260%;
+    }
+
+    .box h1 {
+        color: #000000;
+        font-size: 6rem;
+        white-space: nowrap;
+        height: 30vh;
+        width: 30vh;
+        margin-left: 21vh;
+    }
+
+    .box h2 {
+        color: #000000;
+        white-space: nowrap;
+        font-size: 2.1rem;
+        height: 8vh;
+        width: 8vh;
+        margin-top: -17vh;
+        margin-left: 22vh;
+    }
+
+    .box h3 {
+        font-size: 1.8rem;
+        white-space: nowrap;
+        height: 3vh;
+        width: 3vh;
+        margin-top: -3vh;
+        margin-left: 42vh;
+    }
+
+    .informacao {
+        margin-left: 45vh;
+    }
+
+    .informacao .button {
+        margin-left: 3vh;
+    }
+
+    .informacao button {
+
+        font-size: 4.5vh;
+        white-space: nowrap;
+
+        width: 24vh;
+        margin-left: -12vh;
+        margin-right: 12vh;
+    }
+
+    .box img {
+        margin-left: auto;
+        width: 68rem;
+        height: 104.5rem;
+    }
+
+    .Footer-container {
+        margin: 0;
+        margin-top: -40vh;
+        height: 240%;
+        width: 60rem;
+    }
+
+    .Footer-container p {
+
+        width: 3000em;
+        height: 240%;
+        font-size: 2.8vh;
+        line-height: 4vh;
+    }
+
+    .Footer-infos {
+        width: 70rem;
+        gap: 2rem;
+        margin: 3vh;
+        margin-left: -3vh;
+    }
+
+    .linha {
+        margin-right: -20rem;
+        margin-left: 4rem;
+        height: 2px;
+        background-color: var(--text-color);
+    }
+}
+
+@media only screen and (min-width: 450px) and (max-width: 499px) {
+    #menu-icon {
+        display: initial;
+
+
+    }
+
+    .Links {
+        position: absolute;
+        top: -70000px;
+        left: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        background: #000000;
+        transition: all ease .55s;
+        text-align: left;
+        margin-top: -45em;
+        margin-left: 3em;
+        z-index: 4;
+        width: 210%;
+        height: 600%;
+
+    }
+
+    .Links a {
+        color: #ffffff;
+        font-size: 75px;
+        font-weight: 400;
+        margin: 0.8rem 1.8rem;
+        display: block;
+    }
+
+    .Links.open {
+        top: 100%;
+    }
+
+    .comprar-agora button {
+        margin-top: 1vh;
+    }
+
+    :root {
+        --cor-fundo: none;
+        --second-color: #000000;
+        flex-direction: row;
+        overflow-x: hidden;
+    }
+
+    .iphone15 {
+        background-color: var(--cor-fundo);
+    }
+
+    .comprar-agora {
+        margin-left: 77.5vh;
+        flex-direction: row-reverse;
+
+
+    }
+
+    .modal-content .titulo {
+        font-size: 27px;
+    }
+
+    .bloco {
+        height: 819px;
+    }
+
+    .bloco .titulo1 {
+        font-size: 59px;
+    }
+
+    input[type=text] {
+        height: 96px;
+        font-size: 32px;
+    }
+
+    input[type=password] {
+        height: 96px;
+        font-size: 32px;
+    }
+
+    input[type=submit] {
+        width: 224px;
+        height: 59px;
+        font-size: 32px;
+    }
+
+    .hero-text h1 {
+        font-size: 13.5rem;
+        margin-left: 9%;
+        margin-top: 1vh;
+    }
+
+    .hero-text h4 {
+        font-size: 5.6em;
+        white-space: nowrap;
+        margin-left: 10%;
+        margin-top: 11.5vh;
+    }
+
+    .hero-text p {
+        font-size: 1.25em;
+        margin-left: 40%;
+        margin-top: 5vh;
+
+    }
+
+    .hero-img img {
+        width: 281%;
+        height: auto;
+        margin-left: -40vh;
+        margin-top: 23vh;
+        position: relative;
+        z-index: 2;
+    }
+
+    .hero-img2 img {
+        width: 157%;
+        height: auto;
+        margin-left: 125px;
+        margin-top: 132vh;
+        position: relative;
+        transform: rotate(18deg);
+        z-index: 1;
+    }
+
+    section {
+        height: 480vh;
+    }
+
+    #bag-icon {
+        display: none;
+    }
+
+    body.color {
+        --second-color: #fff;
+    }
+
+    .release-container {
+        margin-left: -120vh;
+        margin-top: -130vh;
+        display: flex;
+        flex-direction: row;
+
+    }
+
+    .release-container p {
+        display: flex;
+        white-space: nowrap;
+        text-align: center;
+        margin-left: -35vh;
+
+    }
+
+    .box {
+        width: 180%;
+        background-color: #ffffff;
+        height: 50%;
+        margin-top: 115vh;
+        max-width: 280%;
+    }
+
+    .box h1 {
+        color: #000000;
+        font-size: 6rem;
+        white-space: nowrap;
+        height: 30vh;
+        width: 30vh;
+        margin-left: 21vh;
+    }
+
+    .box h2 {
+        color: #000000;
+        white-space: nowrap;
+        font-size: 2.1rem;
+        height: 8vh;
+        width: 8vh;
+        margin-top: -17vh;
+        margin-left: 22vh;
+    }
+
+    .box h3 {
+        font-size: 1.8rem;
+        white-space: nowrap;
+        height: 3vh;
+        width: 3vh;
+        margin-top: -3vh;
+        margin-left: 42vh;
+    }
+
+    .informacao {
+        margin-left: 45vh;
+    }
+
+    .informacao .button {
+        margin-left: 3vh;
+    }
+
+    .informacao button {
+
+        font-size: 4.5vh;
+        white-space: nowrap;
+
+        width: 24vh;
+        margin-left: -12vh;
+        margin-right: 12vh;
+    }
+
+    .box img {
+        margin-left: auto;
+        width: 68rem;
+        height: 104.5rem;
+    }
+
+    .Footer-container {
+        margin: 0;
+        margin-top: -40vh;
+        height: 240%;
+        width: 60rem;
+    }
+
+    .Footer-container p {
+
+        width: 3000em;
+        height: 240%;
+        font-size: 2.8vh;
+        line-height: 4vh;
+    }
+
+    .Footer-infos {
+        width: 70rem;
+        gap: 2rem;
+        margin: 3vh;
+        margin-left: -3vh;
+    }
+
+    .linha {
+        margin-right: -20rem;
+        margin-left: 4rem;
+        height: 2px;
+        background-color: var(--text-color);
+    }
+}
+
+@media only screen and (min-width: 400px) and (max-width: 449px) {
+    #menu-icon {
+        display: initial;
+
+
+    }
+
+    .Links {
+        position: absolute;
+        top: -70000px;
+        left: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        background: #000000;
+        transition: all ease .55s;
+        text-align: left;
+        margin-top: -45em;
+        margin-left: 3em;
+        z-index: 4;
+        width: 240%;
+        height: 600%;
+
+    }
+
+    .Links a {
+        color: #ffffff;
+        font-size: 75px;
+        font-weight: 400;
+        margin: 0.8rem 1.8rem;
+        display: block;
+    }
+
+    .Links.open {
+        top: 100%;
+    }
+
+    .comprar-agora button {
+        margin-top: 1vh;
+    }
+
+    :root {
+        --cor-fundo: none;
+        --second-color: #000000;
+        flex-direction: row;
+        overflow-x: hidden;
+    }
+
+    .iphone15 {
+        background-color: var(--cor-fundo);
+    }
+
+    .comprar-agora {
+        margin-left: 77.5vh;
+        flex-direction: row-reverse;
+
+
+    }
+
+    .modal-content .titulo {
+        font-size: 29px;
+    }
+
+    .bloco {
+        height: 821px;
+    }
+
+    .bloco .titulo1 {
+        font-size: 62px;
+    }
+
+    input[type=text] {
+        height: 98px;
+        font-size: 34px;
+    }
+
+    input[type=password] {
+        height: 98px;
+        font-size: 34px;
+    }
+
+    input[type=submit] {
+        width: 226px;
+        height: 61px;
+        font-size: 34px;
+    }
+
+    .hero-text h1 {
+        font-size: 13.5rem;
+        margin-left: 9%;
+        margin-top: 1vh;
+    }
+
+    .hero-text h4 {
+        font-size: 5.6em;
+        white-space: nowrap;
+        margin-left: 10%;
+        margin-top: 11.5vh;
+    }
+
+    .hero-text p {
+        font-size: 1.25em;
+        margin-left: 40%;
+        margin-top: 5vh;
+
+    }
+
+    .hero-img img {
+        width: 281%;
+        height: auto;
+        margin-left: -40vh;
+        margin-top: 23vh;
+        position: relative;
+        z-index: 2;
+    }
+
+    .hero-img2 img {
+        width: 157%;
+        height: auto;
+        margin-left: 125px;
+        margin-top: 132vh;
+        position: relative;
+        transform: rotate(18deg);
+        z-index: 1;
+    }
+
+    section {
+        height: 480vh;
+    }
+
+    #bag-icon {
+        display: none;
+    }
+
+    body.color {
+        --second-color: #fff;
+    }
+
+    .release-container {
+        margin-left: -120vh;
+        margin-top: -130vh;
+        display: flex;
+        flex-direction: row;
+
+    }
+
+    .release-container p {
+        display: flex;
+        white-space: nowrap;
+        text-align: center;
+        margin-left: -25vh;
+
+    }
+
+    .box {
+        width: 200%;
+        background-color: #ffffff;
+        height: 50%;
+        margin-top: 115vh;
+        max-width: 315%;
+    }
+
+    .box h1 {
+        color: #000000;
+        font-size: 6rem;
+        white-space: nowrap;
+        height: 30vh;
+        width: 30vh;
+        margin-left: 21vh;
+    }
+
+    .box h2 {
+        color: #000000;
+        white-space: nowrap;
+        font-size: 2.1rem;
+        height: 8vh;
+        width: 8vh;
+        margin-top: -17vh;
+        margin-left: 22vh;
+    }
+
+    .box h3 {
+        font-size: 1.8rem;
+        white-space: nowrap;
+        height: 3vh;
+        width: 3vh;
+        margin-top: -3vh;
+        margin-left: 42vh;
+    }
+
+    .informacao {
+        margin-left: 45vh;
+    }
+
+    .informacao .button {
+        margin-left: 3vh;
+    }
+
+    .informacao button {
+
+        font-size: 4.5vh;
+        white-space: nowrap;
+
+        width: 24vh;
+        margin-left: -12vh;
+        margin-right: 12vh;
+    }
+
+    .box img {
+        margin-left: auto;
+        width: 68rem;
+        height: 104.5rem;
+    }
+
+    .Footer-container {
+        margin: 0;
+        margin-top: -40vh;
+        height: 240%;
+        width: 60rem;
+    }
+
+    .Footer-container p {
+
+        width: 3000em;
+        height: 240%;
+        font-size: 2.8vh;
+        line-height: 4vh;
+    }
+
+    .Footer-infos {
+        width: 70rem;
+        gap: 2rem;
+        margin: 3vh;
+        margin-left: -3vh;
+    }
+
+    .linha {
+        margin-right: -20rem;
+        margin-left: 4rem;
+        height: 2px;
+        background-color: var(--text-color);
+    }
+}
+
+@media only screen and (min-width: 383px) and (max-width: 399px) {
+    #menu-icon {
+        display: initial;
+
+
+    }
+
+    .Links {
+        position: absolute;
+        top: -70000px;
+        left: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        background: #000000;
+        transition: all ease .55s;
+        text-align: left;
+        margin-top: -45em;
+        margin-left: 3em;
+        z-index: 4;
+        width: 260%;
+        height: 600%;
+
+    }
+
+    .Links a {
+        color: #ffffff;
+        font-size: 80px;
+        font-weight: 400;
+        margin: 1.3rem 2.3rem;
+        display: block;
+    }
+
+    .Links.open {
+        top: 100%;
+    }
+
+    .comprar-agora button {
+        margin-top: 1vh;
+    }
+
+    :root {
+        --cor-fundo: none;
+        --second-color: #000000;
+        flex-direction: row;
+        overflow-x: hidden;
+    }
+
+    .iphone15 {
+        background-color: var(--cor-fundo);
+    }
+
+    .comprar-agora {
+        margin-left: 77.5vh;
+        flex-direction: row-reverse;
+
+
+    }
+
+    .modal-content .titulo {
+        font-size: 31px;
+
+    }
+
+    .bloco {
+        height: 823px;
+    }
+
+    .bloco .titulo1 {
+        font-size: 65px;
+        margin-top: -10px;
+    }
+
+    input[type=text] {
+        height: 100px;
+        font-size: 36px;
+    }
+
+    input[type=password] {
+        height: 100px;
+        font-size: 36px;
+    }
+
+    input[type=submit] {
+        width: 228px;
+        height: 63px;
+        font-size: 36px;
+    }
+
+    .hero-text h1 {
+        font-size: 13.5rem;
+        margin-left: 9%;
+        margin-top: 1vh;
+    }
+
+    .hero-text h4 {
+        font-size: 5.6em;
+        white-space: nowrap;
+        margin-left: 10%;
+        margin-top: 11.5vh;
+    }
+
+    .hero-text p {
+        font-size: 1.25em;
+        margin-left: 40%;
+        margin-top: 5vh;
+
+    }
+
+    .hero-img img {
+        width: 281%;
+        height: auto;
+        margin-left: -40vh;
+        margin-top: 23vh;
+        position: relative;
+        z-index: 2;
+    }
+
+    .hero-img2 img {
+        width: 157%;
+        height: auto;
+        margin-left: 125px;
+        margin-top: 132vh;
+        position: relative;
+        transform: rotate(18deg);
+        z-index: 1;
+    }
+
+    section {
+        height: 480vh;
+    }
+
+    #bag-icon {
+        display: none;
+    }
+
+    body.color {
+        --second-color: #fff;
+    }
+
+    .release-container {
+        margin-left: -120vh;
+        margin-top: -130vh;
+        display: flex;
+        flex-direction: row;
+
+    }
+
+    .release-container p {
+        display: flex;
+        white-space: nowrap;
+        text-align: center;
+        margin-left: -20vh;
+    }
+
+    .box {
+        width: 210%;
+        background-color: #ffffff;
+        height: 50%;
+        margin-top: 115vh;
+        max-width: 907%;
+    }
+
+    .box h1 {
+        color: #000000;
+        font-size: 6rem;
+        white-space: nowrap;
+        height: 30vh;
+        width: 30vh;
+        margin-left: 21vh;
+    }
+
+    .box h2 {
+        color: #000000;
+        white-space: nowrap;
+        font-size: 2.1rem;
+        height: 8vh;
+        width: 8vh;
+        margin-top: -17vh;
+        margin-left: 22vh;
+    }
+
+    .box h3 {
+        font-size: 1.8rem;
+        white-space: nowrap;
+        height: 3vh;
+        width: 3vh;
+        margin-top: -3vh;
+        margin-left: 42vh;
+    }
+
+    .informacao {
+        margin-left: 45vh;
+    }
+
+    .informacao .button {
+        margin-left: 3vh;
+    }
+
+    .informacao button {
+
+        font-size: 4.5vh;
+        white-space: nowrap;
+
+        width: 24vh;
+        margin-left: -12vh;
+        margin-right: 12vh;
+    }
+
+    .box img {
+        margin-left: auto;
+        width: 68rem;
+        height: 104.5rem;
+    }
+
+    .Footer-container {
+        margin: 0;
+        margin-top: -40vh;
+        height: 240%;
+        width: 60rem;
+    }
+
+    .Footer-container p {
+
+        width: 3000em;
+        height: 240%;
+        font-size: 2.8vh;
+        line-height: 4vh;
+    }
+
+    .Footer-infos {
+        width: 70rem;
+        gap: 2rem;
+        margin: 3vh;
+        margin-left: -3vh;
+    }
+
+    .linha {
+        margin-right: -20rem;
+        margin-left: 4rem;
+        height: 2px;
+        background-color: var(--text-color);
+    }
+}
+
+@media only screen and (min-width: 352px) and (max-width: 382px) {
+    #menu-icon {
+        display: initial;
+
+
+    }
+
+    .Links {
+        position: absolute;
+        top: -70000px;
+        left: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        background: #000000;
+        transition: all ease .55s;
+        text-align: left;
+        margin-top: -45em;
+        margin-left: 3em;
+        z-index: 4;
+        width: 280%;
+        height: 600%;
+
+    }
+
+    .Links a {
+        color: #ffffff;
+        font-size: 80px;
+        font-weight: 400;
+        margin: 1.3rem 2.3rem;
+        display: block;
+    }
+
+    .Links.open {
+        top: 100%;
+    }
+
+    .comprar-agora button {
+        margin-top: 1vh;
+    }
+
+    :root {
+        --cor-fundo: none;
+        --second-color: #000000;
+        flex-direction: row;
+        overflow-x: hidden;
+    }
+
+    .iphone15 {
+        background-color: var(--cor-fundo);
+    }
+
+    .comprar-agora {
+        margin-left: 77.5vh;
+        flex-direction: row-reverse;
+
+
+    }
+
+    .modal-content .titulo {
+        font-size: 33px;
+
+    }
+
+    .bloco {
+        height: 827px;
+    }
+
+    .bloco .titulo1 {
+        font-size: 68px;
+    }
+
+    input[type=text] {
+        height: 102px;
+        font-size: 38px;
+    }
+
+    input[type=password] {
+        height: 102px;
+        font-size: 38px;
+    }
+
+    input[type=submit] {
+        width: 230px;
+        height: 65px;
+        font-size: 38px;
+    }
+
+    .hero-text h1 {
+        font-size: 13.5rem;
+        margin-left: 9%;
+        margin-top: 1vh;
+    }
+
+    .hero-text h4 {
+        font-size: 5.6em;
+        white-space: nowrap;
+        margin-left: 10%;
+        margin-top: 11.5vh;
+    }
+
+    .hero-text p {
+        font-size: 1.25em;
+        margin-left: 40%;
+        margin-top: 5vh;
+
+    }
+
+    .hero-img img {
+        width: 281%;
+        height: auto;
+        margin-left: -40vh;
+        margin-top: 23vh;
+        position: relative;
+        z-index: 2;
+    }
+
+    .hero-img2 img {
+        width: 157%;
+        height: auto;
+        margin-left: 125px;
+        margin-top: 132vh;
+        position: relative;
+        transform: rotate(18deg);
+        z-index: 1;
+    }
+
+    section {
+        height: 480vh;
+    }
+
+    #bag-icon {
+        display: none;
+    }
+
+    body.color {
+        --second-color: #fff;
+    }
+
+    .release-container {
+        margin-left: -120vh;
+        margin-top: -130vh;
+        display: flex;
+        flex-direction: row;
+
+    }
+
+    .release-container p {
+        display: flex;
+        white-space: nowrap;
+        text-align: center;
+        margin-left: -18vh;
+        margin-top: -6vh;
+    }
+
+    .box {
+        width: 220%;
+        background-color: #ffffff;
+        height: 50%;
+        margin-top: 115vh;
+        max-width: 907%;
+    }
+
+    .box h1 {
+        color: #000000;
+        font-size: 6rem;
+        white-space: nowrap;
+        height: 30vh;
+        width: 30vh;
+        margin-left: 21vh;
+    }
+
+    .box h2 {
+        color: #000000;
+        white-space: nowrap;
+        font-size: 2.1rem;
+        height: 8vh;
+        width: 8vh;
+        margin-top: -17vh;
+        margin-left: 22vh;
+    }
+
+    .box h3 {
+        font-size: 1.8rem;
+        white-space: nowrap;
+        height: 3vh;
+        width: 3vh;
+        margin-top: -3vh;
+        margin-left: 42vh;
+    }
+
+    .informacao {
+        margin-left: 45vh;
+    }
+
+    .informacao .button {
+        margin-left: 3vh;
+    }
+
+    .informacao button {
+
+        font-size: 4.5vh;
+        white-space: nowrap;
+
+        width: 24vh;
+        margin-left: -12vh;
+        margin-right: 12vh;
+    }
+
+    .box img {
+        margin-left: auto;
+        width: 68rem;
+        height: 104.5rem;
+    }
+
+    .Footer-container {
+        margin: 0;
+        margin-top: -40vh;
+        height: 240%;
+        width: 60rem;
+    }
+
+    .Footer-container p {
+
+        width: 3000em;
+        height: 240%;
+        font-size: 2.8vh;
+        line-height: 4vh;
+    }
+
+    .Footer-infos {
+        width: 70rem;
+        gap: 2rem;
+        margin: 3vh;
+        margin-left: -3vh;
+    }
+
+    .linha {
+        margin-right: -20rem;
+        margin-left: 4rem;
+        height: 2px;
+        background-color: var(--text-color);
+    }
+}
+
+@media only screen and (min-width: 325px) and (max-width: 352px) {
+    #menu-icon {
+        display: initial;
+
+
+    }
+
+    .Links {
+        position: absolute;
+        top: -70000px;
+        left: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        background: #000000;
+        transition: all ease .55s;
+        text-align: left;
+        margin-top: -45em;
+        margin-left: 2em;
+        z-index: 4;
+        width: 300%;
+        height: 600%;
+
+    }
+
+    .Links a {
+        color: #ffffff;
+        font-size: 85px;
+        font-weight: 400;
+        margin: 1.3rem 2.3rem;
+        display: block;
+    }
+
+    .Links.open {
+        top: 100%;
+    }
+
+    .comprar-agora button {
+        margin-top: 1vh;
+    }
+
+    :root {
+        --cor-fundo: none;
+        --second-color: #000000;
+        flex-direction: row;
+        overflow-x: hidden;
+    }
+
+    .iphone15 {
+        background-color: var(--cor-fundo);
+    }
+
+    .comprar-agora {
+        margin-left: 77.5vh;
+        flex-direction: row-reverse;
+
+
+    }
+
+    .modal-content .titulo {
+        font-size: 35px;
+
+    }
+
+    .bloco {
+        height: 831px;
+    }
+
+    .bloco .titulo1 {
+        font-size: 71px;
+    }
+
+    input[type=text] {
+        height: 104px;
+        font-size: 40px;
+    }
+
+    input[type=password] {
+        height: 104px;
+        font-size: 40px;
+    }
+
+    input[type=submit] {
+        width: 232px;
+        height: 67px;
+        font-size: 40px;
+    }
+
+
+    .hero-text h1 {
+        font-size: 13.5rem;
+        margin-left: 9%;
+        margin-top: 1vh;
+    }
+
+    .hero-text h4 {
+        font-size: 5.6em;
+        white-space: nowrap;
+        margin-left: 10%;
+        margin-top: 11.5vh;
+    }
+
+    .hero-text p {
+        font-size: 1.25em;
+        margin-left: 40%;
+        margin-top: 5vh;
+
+    }
+
+    .hero-img img {
+        width: 281%;
+        height: auto;
+        margin-left: -40vh;
+        margin-top: 23vh;
+        position: relative;
+        z-index: 2;
+    }
+
+    .hero-img2 img {
+        width: 157%;
+        height: auto;
+        margin-left: 125px;
+        margin-top: 132vh;
+        position: relative;
+        transform: rotate(18deg);
+        z-index: 1;
+    }
+
+    section {
+        height: 480vh;
+    }
+
+    #bag-icon {
+        display: none;
+    }
+
+    body.color {
+        --second-color: #fff;
+    }
+
+    .release-container {
+        margin-left: -120vh;
+        margin-top: -130vh;
+        display: flex;
+        flex-direction: row;
+
+    }
+
+    .release-container p {
+        display: flex;
+        white-space: nowrap;
+        text-align: center;
+        margin-top: -6vh;
+        margin-left: -15vh;
+    }
+
+    .box {
+        width: 230%;
+        background-color: #ffffff;
+        height: 50%;
+        margin-top: 115vh;
+        max-width: 907%;
+    }
+
+    .box h1 {
+        color: #000000;
+        font-size: 6rem;
+        white-space: nowrap;
+        height: 30vh;
+        width: 30vh;
+        margin-left: 21vh;
+    }
+
+    .box h2 {
+        color: #000000;
+        white-space: nowrap;
+        font-size: 2.1rem;
+        height: 8vh;
+        width: 8vh;
+        margin-top: -17vh;
+        margin-left: 22vh;
+    }
+
+    .box h3 {
+        font-size: 1.8rem;
+        white-space: nowrap;
+        height: 3vh;
+        width: 3vh;
+        margin-top: -3vh;
+        margin-left: 42vh;
+    }
+
+    .informacao {
+        margin-left: 45vh;
+    }
+
+    .informacao .button {
+        margin-left: 3vh;
+    }
+
+    .informacao button {
+
+        font-size: 4.5vh;
+        white-space: nowrap;
+
+        width: 24vh;
+        margin-left: -12vh;
+        margin-right: 12vh;
+    }
+
+    .box img {
+        margin-left: auto;
+        width: 68rem;
+        height: 104.5rem;
+    }
+
+    .Footer-container {
+        margin: 0;
+        margin-top: -40vh;
+        height: 240%;
+        width: 60rem;
+    }
+
+    .Footer-container p {
+
+        width: 3000em;
+        height: 240%;
+        font-size: 2.8vh;
+        line-height: 4vh;
+    }
+
+    .Footer-infos {
+        width: 70rem;
+        gap: 2rem;
+        margin: 3vh;
+        margin-left: -3vh;
+    }
+
+    .linha {
+        margin-right: -20rem;
+        margin-left: 4rem;
+        height: 2px;
+        background-color: var(--text-color);
+    }
+}
+
+@media only screen and (min-width: 296px) and (max-width: 324px) {
+    #menu-icon {
+        display: initial;
+
+
+    }
+
+    .Links {
+        position: absolute;
+        top: -70000px;
+        left: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        background: #000000;
+        transition: all ease .55s;
+        text-align: left;
+        margin-top: -45em;
+        margin-left: 2em;
+        z-index: 4;
+        width: 320%;
+        height: 600%;
+
+    }
+
+    .Links a {
+        color: #ffffff;
+        font-size: 90px;
+        font-weight: 400;
+        margin: 1.5rem 2.0rem;
+        display: block;
+    }
+
+    .Links.open {
+        top: 100%;
+    }
+
+    .comprar-agora button {
+        margin-top: 1vh;
+    }
+
+    :root {
+        --cor-fundo: none;
+        --second-color: #000000;
+        flex-direction: row;
+        overflow-x: hidden;
+    }
+
+    .iphone15 {
+        background-color: var(--cor-fundo);
+    }
+
+    .comprar-agora {
+        margin-left: 77.5vh;
+        flex-direction: row-reverse;
+
+
+    }
+
+    .modal-content .titulo {
+        font-size: 37px;
+
+    }
+
+    .bloco {
+        height: 834px;
+    }
+
+    .bloco .titulo1 {
+        font-size: 74px;
+    }
+
+    input[type=text] {
+        height: 106px;
+        font-size: 42px;
+    }
+
+    input[type=password] {
+        height: 106px;
+        font-size: 42px;
+    }
+
+    input[type=submit] {
+        width: 234px;
+        height: 69px;
+        font-size: 42px;
+    }
+
+    .hero-text h1 {
+        font-size: 13.5rem;
+        margin-left: 9%;
+        margin-top: 1vh;
+    }
+
+    .hero-text h4 {
+        font-size: 5.6em;
+        white-space: nowrap;
+        margin-left: 10%;
+        margin-top: 11.5vh;
+    }
+
+    .hero-text p {
+        font-size: 1.25em;
+        margin-left: 40%;
+        margin-top: 5vh;
+
+    }
+
+    .hero-img img {
+        width: 281%;
+        height: auto;
+        margin-left: -40vh;
+        margin-top: 23vh;
+        position: relative;
+        z-index: 2;
+    }
+
+    .hero-img2 img {
+        width: 157%;
+        height: auto;
+        margin-left: 125px;
+        margin-top: 132vh;
+        position: relative;
+        transform: rotate(18deg);
+        z-index: 1;
+    }
+
+    section {
+        height: 480vh;
+    }
+
+    #bag-icon {
+        display: none;
+    }
+
+    body.color {
+        --second-color: #fff;
+    }
+
+    .release-container {
+        margin-left: -120vh;
+        margin-top: -130vh;
+        display: flex;
+        flex-direction: row;
+
+    }
+
+    .release-container p {
+        display: flex;
+        white-space: nowrap;
+        text-align: center;
+        margin-top: -6vh;
+        margin-left: -12vh;
+    }
+
+    .box {
+        width: 250%;
+        background-color: #ffffff;
+        height: 50%;
+        margin-top: 115vh;
+        max-width: 907%;
+    }
+
+    .box h1 {
+        color: #000000;
+        font-size: 6rem;
+        white-space: nowrap;
+        height: 30vh;
+        width: 30vh;
+        margin-left: 21vh;
+    }
+
+    .box h2 {
+        color: #000000;
+        white-space: nowrap;
+        font-size: 2.1rem;
+        height: 8vh;
+        width: 8vh;
+        margin-top: -17vh;
+        margin-left: 22vh;
+    }
+
+    .box h3 {
+        font-size: 1.8rem;
+        white-space: nowrap;
+        height: 3vh;
+        width: 3vh;
+        margin-top: -3vh;
+        margin-left: 42vh;
+    }
+
+    .informacao {
+        margin-left: 45vh;
+    }
+
+    .informacao .button {
+        margin-left: 3vh;
+    }
+
+    .informacao button {
+
+        font-size: 4.5vh;
+        white-space: nowrap;
+
+        width: 24vh;
+        margin-left: -12vh;
+        margin-right: 12vh;
+    }
+
+    .box img {
+        margin-left: auto;
+        width: 68rem;
+        height: 104.5rem;
+    }
+
+    .Footer-container {
+        margin: 0;
+        margin-top: -40vh;
+        height: 240%;
+        width: 60rem;
+    }
+
+    .Footer-container p {
+
+        width: 3000em;
+        height: 240%;
+        font-size: 2.8vh;
+        line-height: 4vh;
+    }
+
+    .Footer-infos {
+        width: 70rem;
+        gap: 2rem;
+        margin: 3vh;
+        margin-left: -3vh;
+    }
+
+    .linha {
+        margin-right: -20rem;
+        margin-left: 4rem;
+        height: 2px;
+        background-color: var(--text-color);
+    }
+}
+
+@media only screen and (max-width: 295px) {
+    #menu-icon {
+        display: initial;
+
+
+    }
+
+    .Links {
+        position: absolute;
+        top: -70000px;
+        left: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        background: #000000;
+        transition: all ease .55s;
+        text-align: left;
+        margin-top: -45em;
+        margin-left: 2em;
+        z-index: 4;
+        width: 340%;
+        height: 600%;
+
+    }
+
+    .Links a {
+        color: #ffffff;
+        font-size: 90px;
+        font-weight: 400;
+        margin: 1.5rem 2.0rem;
+        display: block;
+    }
+
+    .Links.open {
+        top: 100%;
+    }
+
+    .comprar-agora button {
+        margin-top: 1vh;
+    }
+
+    :root {
+        --cor-fundo: none;
+        --second-color: #000000;
+        flex-direction: row;
+        overflow-x: hidden;
+    }
+
+    .iphone15 {
+        background-color: var(--cor-fundo);
+    }
+
+    .comprar-agora {
+        margin-left: 77.5vh;
+        flex-direction: row-reverse;
+
+
+    }
+
+    .modal-content .titulo {
+        font-size: 39px;
+
+    }
+
+    .bloco {
+        height: 836px;
+    }
+
+    .bloco .titulo1 {
+        font-size: 77px;
+    }
+
+    input[type=text] {
+        height: 108px;
+        font-size: 44px;
+    }
+
+    input[type=password] {
+        height: 108px;
+        font-size: 44px;
+    }
+
+    input[type=submit] {
+        width: 236px;
+        height: 71px;
+        font-size: 44px;
+    }
+
+    .hero-text h1 {
+        font-size: 13.5rem;
+        margin-left: 9%;
+        margin-top: 1vh;
+    }
+
+    .hero-text h4 {
+        font-size: 5.6em;
+        white-space: nowrap;
+        margin-left: 10%;
+        margin-top: 11.5vh;
+    }
+
+    .hero-text p {
+        font-size: 1.25em;
+        margin-left: 40%;
+        margin-top: 5vh;
+
+    }
+
+    .hero-img img {
+        width: 281%;
+        height: auto;
+        margin-left: -40vh;
+        margin-top: 23vh;
+        position: relative;
+        z-index: 2;
+    }
+
+    .hero-img2 img {
+        width: 157%;
+        height: auto;
+        margin-left: 125px;
+        margin-top: 132vh;
+        position: relative;
+        transform: rotate(18deg);
+        z-index: 1;
+    }
+
+    section {
+        height: 480vh;
+    }
+
+    #bag-icon {
+        display: none;
+    }
+
+    body.color {
+        --second-color: #fff;
+    }
+
+    .release-container {
+        margin-left: -120vh;
+        margin-top: -130vh;
+        display: flex;
+        flex-direction: row;
+
+    }
+
+    .release-container p {
+        display: flex;
+        white-space: nowrap;
+        text-align: center;
+        margin-top: -6vh;
+        margin-left: -9vh;
+    }
+
+    .box {
+        width: 265%;
+        background-color: #ffffff;
+        height: 50%;
+        margin-top: 115vh;
+        max-width: 907%;
+    }
+
+    .box h1 {
+        color: #000000;
+        font-size: 6rem;
+        white-space: nowrap;
+        height: 30vh;
+        width: 30vh;
+        margin-left: 21vh;
+    }
+
+    .box h2 {
+        color: #000000;
+        white-space: nowrap;
+        font-size: 2.1rem;
+        height: 8vh;
+        width: 8vh;
+        margin-top: -17vh;
+        margin-left: 22vh;
+    }
+
+    .box h3 {
+        font-size: 1.8rem;
+        white-space: nowrap;
+        height: 3vh;
+        width: 3vh;
+        margin-top: -3vh;
+        margin-left: 42vh;
+    }
+
+    .informacao {
+        margin-left: 45vh;
+    }
+
+    .informacao .button {
+        margin-left: 3vh;
+    }
+
+    .informacao button {
+
+        font-size: 4.5vh;
+        white-space: nowrap;
+
+        width: 24vh;
+        margin-left: -12vh;
+        margin-right: 12vh;
+    }
+
+    .box img {
+        margin-left: auto;
+        width: 68rem;
+        height: 104.5rem;
+    }
+
+    .Footer-container {
+        margin: 0;
+        margin-top: -40vh;
+        height: 240%;
+        width: 60rem;
+    }
+
+    .Footer-container p {
+
+        width: 3000em;
+        height: 240%;
+        font-size: 2.8vh;
+        line-height: 4vh;
+    }
+
+    .Footer-infos {
+        width: 70rem;
+        gap: 2rem;
+        margin: 3vh;
+        margin-left: -3vh;
+    }
+
+    .linha {
+        margin-right: -20rem;
+        margin-left: 4rem;
+        height: 2px;
+        background-color: var(--text-color);
+    }
+}

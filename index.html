@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=MuseoModerno:wght@200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+    <title>Iphone Market</title>
+</head>
+
+<body>
+
+    <header>
+        <a href="#" class="logo"><i class='bx bxl-apple'></i>BApple</a>
+
+        <ul class="Links">
+
+            <li> <a href="#" class="active">Home</a></li>
+            <li><a href="loja.html">Loja</a></li>
+            <li><a href="#">Acessórios</a></li>
+            <li><a href="#">Suporte</a></li>
+
+        </ul>
+
+        <div class="comprar-agora">
+            <div class="bx bx-shopping-bag" id="bag-icon">
+                <a href="#"></a>
+            </div>
+
+            <div class="bx bx-menu" id="menu-icon"></div>
+            <div class="bx bx-moon" id="darkmode"></div>
+            <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">
+                <div class="bx bxs-user-circle" id="user">
+                    <a href="#"></a>
+                </div>
+        </div>
+
+
+    </header>
+
+
+
+    <div id="id01" class="modal">
+
+        <form class="modal-content animate" action="/action_page.php" method="post">
+            <div class="imgcontainer">
+                <span onclick="document.getElementById('id01').style.display='none'" class="close"
+                    title="Close Modal">&times;</span>
+            </div>
+            <div class="titulo">
+                <h1>Inicie sessão para finalizar a compra com rapidez.</h1>
+
+                <div class="bloco">
+                    <p class="titulo1">Iniciar sessão </p>
+                    <input type="text" placeholder="E-mail ou número de telefone" id="login">
+
+                    <input type="password" placeholder="Insira sua senha" id="senha">
+                    <input type="submit" value="Entrar" onclick="logar(); return false">
+                    <div class="linha"></div>
+                </div>
+
+            </div>
+
+        </form>
+    </div>
+
+
+    <section class="hero">
+        <div class="hero-text">
+            <h1>Products</h1>
+            <h4>B A P P L E &nbsp; S E R I E S</h4><br>
+            <p>Uma nova geração chegou e mais uma vez inovando no visual e na tecnologia. Vem aí, os mais novos produtos
+                da BApple</p>
+        </div>
+
+        <div class="hero-img">
+            <img src="iphone1 2.png">
+        </div>
+        <div class="hero-img2">
+            <img src="Sem Título-2.png" alt="">
+
+        </div>
+
+    </section>
+
+
+    <section class="iphone15">
+        <div class="box">
+            <h1>iPhone 15 PRO</h1>
+            <h2>Nova câmera. Novo design. Novo iPhone</h2>
+            <h3>Lançamento em breve!</h3>
+            <div class="informacao">
+                <a href="#"><button>Ler mais> </button></a>
+                <a href="#"><button>Pré-Venda> </button></a>
+            </div>
+            <img src="Iphone_Front.png" alt="">
+        </div>
+        <div class="release-container">
+            <p>
+                R E L E A S E S
+            </p>
+        </div>
+
+
+    </section>
+
+    <script src="script.js"></script>
+
+    <footer>
+        <div class="Footer-container">
+            <p>Os compradores qualificados podem receber descontos promocionais ao comprar um produto elegível com
+                produto promocional em um local qualificado.
+                <br>Apenas um produto promocional por produto elegível e por comprador qualificado. A oferta está
+                sujeita à disponibilidade. Sujeito aos termos e condições <span class="aqui">aqui.</span>
+            </p>
+
+            <div class="linha"></div>
+
+        </div>
+
+        <div class="Footer-infos">
+            <div class="categoria-footer">
+                <h1>Loja e Sobre</h1>
+                <a href="#">Store</a>
+                <a href="#">Mac</a>
+                <a href="#">iPad</a>
+                <a href="#">iPhone</a>
+                <a href="#">Watch</a>
+                <a href="#">AirPods</a>
+                <a href="#">TV & Home</a>
+                <a href="#">AirTag</a>
+                <a href="#">Acessórios</a>
+                <a href="#">Gift Cards</a>
+            </div>
+
+            <div class="categoria-footer">
+                <h1>Entretenimento</h1>
+                <a href="#">BApple One</a>
+                <a href="#">BApple TV+</a>
+                <a href="#">BApple Music</a>
+                <a href="#">BApple Arcade</a>
+                <a href="#">BApple Podcasts</a>
+                <a href="#">BApple Books</a>
+            </div>
+
+            <div class="categoria-footer">
+                <h1>BApple Store</h1>
+                <a href="#">Encontre uma loja</a>
+                <a href="#">Barra Genial</a>
+                <a href="#">Hoje na Apple</a>
+                <a href="#">Acampamento da maçã</a>
+                <a href="#">Troca da Apple</a>
+                <a href="#">Maneiras de comprar</a>
+                <a href="#">Programa de reciclagem</a>
+                <a href="#">Status do pedido</a>
+                <a href="#">Ajuda para compras</a>
+            </div>
+
+            <div class="categoria-footer">
+                <h1>Para Empresas</h1>
+                <a href="#">BApple e empresas</a>
+                <a href="#">Loja e empresas</a>
+            </div>
+
+            <div class="categoria-footer">
+                <h1>BApple Valores</h1>
+                <a href="#">Acessibilidade</a>
+                <a href="#">Educação</a>
+                <a href="#">Ambiente</a>
+                <a href="#">Privacidade</a>
+                <a href="#">Responsabilidade do Fornecedor</a>
+            </div>
+
+            <div class="categoria-footer">
+                <h1>Team BApple</h1>
+                <a href="#">Murilo Lopes</a>
+                <a href="#">Caio Sampaio</a>
+                <a href="#">Eduardo Rocha</a>
+                <a href="#">Marcos Vinicius</a>
+                <a href="#">Gustavo Cruz</a>
+                <a href="#">Kaique William</a>
+            </div>
+
+
+        </div>
+    </footer>
+</body>
+
+</html>
