@@ -38,7 +38,7 @@ Projeto solicitado pelo professor de Front-End da Universidade Católica de Salv
 - [x] Aba de login
 - [x] Inversão de cores (modo escuro)
 
-### Contribuidores
+### Autores
 
 <a href="https://github.com/Caiosmp">
 <img src="https://avatars.githubusercontent.com/u/147769770?v=4" width="70px" />
