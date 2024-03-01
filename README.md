@@ -16,11 +16,14 @@ Projeto solicitado pelo professor de Front-End da Universidade Católica de Salv
 
 ### Desktop
 
-<img src="https://media.discordapp.net/attachments/1144057704575402014/1186858559921717389/image.png?ex=6594c72b&is=6582522b&hm=8ab673dbab4dd7a3a5c9e3689df791c27b9ec9b76c9cc0d2840d949d9f9afaad&=&format=webp&quality=lossless&width=1296&height=676"/>
+<img src="https://media.discordapp.net/attachments/1141769002423685141/1212975361810505798/image.png?ex=65f3ca56&is=65e15556&hm=63b70966f84db6fcbe1b72027a9549133aaa396fdda439e680125eb7085f0005&=&format=webp&quality=lossless&width=550&height=284"/>
+<img src="https://media.discordapp.net/attachments/1141769002423685141/1212975890909372456/image.png?ex=65f3cad4&is=65e155d4&hm=9c9b31e34d20c309931e2d3b83414aab333c0ca29fbfdc44078294d1cdbfdc00&=&format=webp&quality=lossless&width=550&height=285"/>
 
 ### Mobile
 
-<img src="https://media.discordapp.net/attachments/1144057704575402014/1186858908988473486/image.png?ex=6594c77e&is=6582527e&hm=d43f245c4b8760a6b1e458d3157f72858b176168768bc15154a7e8ae9b5d8af8&=&format=webp&quality=lossless&width=294&height=676" />
+<img src="https://media.discordapp.net/attachments/1141769002423685141/1212975538256216094/image.png?ex=65f3ca80&is=65e15580&hm=5890714761dfe095cf3220a5cfb3d4b4296ec12dd443406a1cd33d94f3d64753&=&format=webp&quality=lossless&width=443&height=676" />
+<img src="https://media.discordapp.net/attachments/1141769002423685141/1212975820658712586/image.png?ex=65f3cac3&is=65e155c3&hm=cef642392329f2ccc28c1ba6dea9222ce759c8f8cf05a8e3f8abd98c0a01d19e&=&format=webp&quality=lossless&width=335&height=675" />
+
 
 [Figma do Projeto](https://www.figma.com/file/5KgqyEY6K3MthEVUYL2ty1/Untitled?type=design&node-id=24%3A104&mode=design&t=rm4ciQDq4HxlJizY-1)
 
